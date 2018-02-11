@@ -1,0 +1,68 @@
+body{
+   background-color: #333;
+}
+
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#centerPic{
+    height: 450px;
+    width: 500px;
+    border: 3px solid #fff;
+    margin-left: 30%;
+}
+
+#centerPic img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#carrusel{
+    display: flex;
+    flex-direction: row;
+    margin-left: 18%;
+}
+
+.imagenCarrusel{
+    height: 200px;
+    width: 300px;
+    border: 2px solid #fff;
+}
+
+.imagenCarrusel img{
+    width: 100%;
+    height: 100%;
+}
+#imagenCentro{
+    border: 4px solid #0069AB;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    top: 85%;
+}
+
+#arrow-left{
+    border-width: 30px 40px 30px 0;
+    left: 0;
+    border-color: transparent #fff transparent transparent; /*Figura del triangulo para las flechas*/
+    margin-left: 11%;
+}
+
+#arrow-right{
+    border-width: 30px 0 30px 40px;
+    right: 0;
+    border-color: transparent transparent transparent #fff; /*Figura del triangulo para las flechas*/
+    margin-right: 15%;
+}
+
+
