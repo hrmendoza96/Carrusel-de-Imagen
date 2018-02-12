@@ -29,6 +29,7 @@ body{
 }
 
 .imagenCarrusel{
+    cursor: pointer;
     height: 200px;
     width: 300px;
     border: 2px solid #fff;

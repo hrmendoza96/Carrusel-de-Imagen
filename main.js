@@ -1,4 +1,4 @@
-//Cargar las imagenes a un arreglo
+//Cargar la dirrecion imagenes a un arreglo
 var imagenes = ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg',
 'img/img5.jpg', 'img/img6.jpg', 'img/img7.jpg', 'img/img8.jpg', 'img/img9.jpg',
 'img/img10.jpg', 'img/img11.jpg', 'img/img12.jpg', 'img/img13.jpg', 'img/img14.jpg', 'img/img15.jpg' ];
@@ -25,7 +25,7 @@ function carrusel(contenedor){
             tgt = e.target; //Identificador de que elemento esta siendo targeted
 
         //Target cuando se hace click en el boton izq
-        if(tgt == leftArrow){
+        if(tgt == leftArrow || tgt == imgIzq){
             validarPosLeft();
             imgIzq.src = imagenes[posicionIzq];
             imgCentro.src = imagenes[posicion];
@@ -34,13 +34,15 @@ function carrusel(contenedor){
         }
 
         //Target cuando se hace click en el boton der
-        if(tgt == rightArrow){
+        if(tgt == rightArrow || tgt == imgDer){
             validarPosRight();
             imgIzq.src = imagenes[posicionIzq];
             imgCentro.src = imagenes[posicion];
             imgDer.src = imagenes[posicionDer];
             cambioBigPic();
         }
+
+        
 
     });
 }
